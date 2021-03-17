@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.user-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #212a52;
+    padding: 15px 300px;
+}
+
+.user {
+    background-color: #303c70;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+// authorization
+.authorization {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #dfdfdf;
+}
+
+.lgn-rg {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 130px;
+    margin: auto;
+}
+
+.lgn-rg button {
+    padding: 2px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 230px;
+    margin-top: 10px;
+}
+
+.sign input {
+    margin-bottom: 5px;
+    padding: 2px 0 2px 10px;
+}
+
+.sign div {
+    display: flex;
+    justify-content: center;
+}
+
+.sign button {
+    align-self: center;
+    padding: 2px;
+    margin: 5px;
+}
+
+// sorter
+.sorter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #dfdfdf;
+    padding: 10px;
+}
+
+.sorter button {
+    padding: 2px;
+    margin: 5px;
+}
+
+// taskslist
+.task {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    transition: .2s linear;
+    padding: 10px;
+    margin: 0 300px;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.task:hover {
+    background: #f1f1f1;
+}
+
+.task-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.for-whom {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 20px;
+    word-wrap: break-word;
+    margin-right: 25px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    color: #444444;
+    word-wrap: break-word;
+}
+
+.email p {
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.control {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100px;
+    height: 35px;
+    align-self: start;
+}
+
+.status {
+    width: 24px;
+    height: 24px;
+}
+
+.task-btn {
+    max-height: 24px;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.task-content {
+    max-width: 60%;
+}
+
+.task-title {
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.task-description {
+    text-align: justify;
+    font-size: 16px;
+    color: #444444;
+    word-wrap: break-word;
+}
+
+// pagination
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.pagination button {
+    font-size: 14px;
+    padding: 3px;
+    margin: 2px;
+}
+
+// add task
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dfdfdf;
+    padding: 15px;
+}
+
+.btn {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.input-fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5px;
+}
+
+.task-input {
+    width: 280px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.task-desc {
+    padding-top: 4px;
+    height: 50px;
+}
+
+.btn-add {
+    width: 50px;
+    height: 30px;
+    margin: 10px 5px;
+}
+
+// HELPERS
+
+.flex {
+    display: flex;
+}

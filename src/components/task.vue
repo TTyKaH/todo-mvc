@@ -18,7 +18,11 @@
           v-if="currentUserIsAdmin"
           v-model="task.isDone"
         />
-        <button class="task-btn" v-if="currentUserIsAdmin" @click="switchEdit()">
+        <button
+          class="task-btn"
+          v-if="currentUserIsAdmin"
+          @click="switchEdit()"
+        >
           edit
         </button>
         <button @click="taskDel()" class="task-btn">del</button>
@@ -45,11 +49,11 @@
 
 <script>
 export default {
-  props: ["task"],
+  props: ['task'],
   data() {
     return {
       isEditing: false,
-      descBuffer: '',
+      descBuffer: "",
     };
   },
   computed: {
@@ -64,14 +68,14 @@ export default {
       this.$emit("task-del");
     },
     switchEdit() {
-      this.isEditing = !this.isEditing
+      this.isEditing = !this.isEditing;
       if (this.isEditing) {
-        this.descBuffer = this.task.desc
+        this.descBuffer = this.task.desc;
       }
     },
     abortEdit() {
-      this.isEditing = false
-      this.task.desc = this.descBuffer
+      this.isEditing = false;
+      this.task.desc = this.descBuffer;
     },
   },
 };

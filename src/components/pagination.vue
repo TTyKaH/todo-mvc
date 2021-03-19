@@ -60,6 +60,7 @@ export default {
       }
       this.setPage(this.currentPage - 1);
     },
+    // связь через value
     setPage(p) {
       this.currentPage = p;
       let offset = (this.currentPage - 1) * this.limit;
@@ -68,6 +69,3 @@ export default {
   },
 };
 </script>
-
-// должна быть связана с tasks
-// должен быть фильтр массив

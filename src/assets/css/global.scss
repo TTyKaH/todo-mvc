@@ -27,20 +27,28 @@ button {
 }
 
 // bread-crambs
-.bread-cramb {
+.bread-crumb {
     display: flex;
     color: #8b8b8b;
 }
 
-.bread-cramb a {
-    color: #9b9b9b;
-    transition: .1s linear;
+.bread-crumb div {
     font-size: 20px;
-    text-decoration: none;
 }
 
-.bread-cramb a:hover {
+.linked {
+    color: #9b9b9b;
+    transition: .1s linear;
+    display: flex;
+    cursor: pointer;
+}
+
+.linked:hover {
     color: #fff;
+}
+
+.space-crutch {
+    color:transparent;
 }
 
 // authorization

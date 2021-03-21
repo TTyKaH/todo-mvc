@@ -1,6 +1,5 @@
 <template>
   <div class="input-fields">
-    <button @click="click()">TEST</button>
     <div class="input-field">
       <input class="task-input" v-model="task.userName" type="text" placeholder="Name" />
       <input class="task-input" v-model="task.email" type="text" placeholder="Email" />

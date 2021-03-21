@@ -18,14 +18,14 @@ export default new VueRouter({
       },
     },
     {
-      path: "/add-task",
+      path: "/add-new-task",
       name: 'add-task',
       component: addNewTask,
       meta: {
         breadcrumb: [{
           name: 'tasks',
           // возможно ссылка пуста на корневой каталог
-          link: ''
+          link: '/'
         }, {
           name: 'add task'
         }]
@@ -37,7 +37,7 @@ export default new VueRouter({
       meta: {
         breadcrumb: [{
             name: 'tasks',
-            link: ''
+            link: '/'
           },
           {
             name: 'sign in'
@@ -51,7 +51,7 @@ export default new VueRouter({
       meta: {
         breadcrumb: [{
             name: 'tasks',
-            link: ''
+            link: '/'
           },
           {
             name: 'sign up'

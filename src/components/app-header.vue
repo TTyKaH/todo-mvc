@@ -4,12 +4,9 @@
       <div class="user">
         {{ currentUser ? currentUser.name : "anonimous" }}
       </div>
-      <!-- <div class="bread-crambs">
-        {{ breadCrumbs }}
-      </div> -->
       <div class="bread-cramb">
-        <div v-for="cramb in breadCrumbs" :key="cramb">
-          <router-link to="/" class="rout-link">{{ cramb }}</router-link>
+        <div v-for="(breadcrumb, idx) in breadCrambList" :key="idx" @click="routeTo(idx)" :class="{'linked': !!breadcrumb.link}">
+          {{breadcrumb.name}}
         </div>
       </div>
     </div>
@@ -22,40 +19,39 @@
       </div>
     </div>
   </div>
-  <!-- $route использовать для формирования строки breadcrambs -->
 </template>
 
 <script>
 export default {
   data() {
     return {
-      breadCrumbs: ["/home"],
-      // breadCrumbsList: [],
+      breadCrambList: [],
     };
   },
-  // mounted() {
-  //   this.updateList();
-  // },
   computed: {
     currentUser() {
       return this.$store.state.user;
     },
-    // breadCrumbs() {
-    //   return this.$router.history.current.path;
-    // },
+  },
+  mounted() {
+    this.updateList();
   },
   watch: {
-    $route(to, from) {
-      // проверка на то, что я уже и так тут - иначе стакуются ссылки (которые пусты)
-      this.breadCrumbs.push(to.name);
-      console.log(from);
+    $route() {
+      this.updateList();
     },
   },
   methods: {
     signOut() {
       this.$store.commit("setUser", null);
     },
-
+    routeTo(pRouteTo) {
+      if (this.breadCrambList[pRouteTo].link)
+        this.$router.push(this.breadCrambList[pRouteTo].link);
+    },
+    updateList() {
+      this.breadCrambList = this.$route.meta.breadcramb;
+    },
     click() {
       // console.log(this.$router.history.current.path);
       // console.log(this.$router.history.router.history.current.path);

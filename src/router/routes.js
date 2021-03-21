@@ -12,29 +12,51 @@ export default new VueRouter({
       name: 'tasks',
       component: tasks,
       meta: {
-        breadcrumb: 'Home Page',
+        breadcrumb: [{
+          name: 'tasks'
+        }]
       },
     },
     {
-      path: "/add-new-task",
+      path: "/add-task",
       name: 'add-task',
       component: addNewTask,
       meta: {
-        breadcrumb: 'add task',
+        breadcrumb: [{
+          name: 'tasks',
+          // возможно ссылка пуста на корневой каталог
+          link: ''
+        }, {
+          name: 'add task'
+        }]
       },
     },
     {
       path: "/sign-in",
       component: signIn,
       meta: {
-        breadcrumb: 'sign in',
+        breadcrumb: [{
+            name: 'tasks',
+            link: ''
+          },
+          {
+            name: 'sign in'
+          }
+        ],
       },
     },
     {
       path: "/sign-up",
       component: signUp,
       meta: {
-        breadcrumb: 'sign up',
+        breadcrumb: [{
+            name: 'tasks',
+            link: ''
+          },
+          {
+            name: 'sign up'
+          }
+        ],
       },
     },
   ],

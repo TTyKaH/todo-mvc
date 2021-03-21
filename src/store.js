@@ -1,3 +1,4 @@
+import tasks from "@/collections/tasks"
 export default {
     // Почему этот массив был расположен здесь?
     // я его перенес в state из-за того, что не мог обратиться здесь к registere в signin компонента
@@ -14,9 +15,7 @@ export default {
     //     },
     // ],
     state: {
-        user: {
-
-        },
+        user: null,
         registered: [{
                 name: "Alex",
                 login: "Alex",
@@ -29,6 +28,7 @@ export default {
                 password: "Bob",
             },
         ],
+        tasks: [...tasks],
     },
     mutations: {
         setUser(state, user) {
@@ -36,7 +36,12 @@ export default {
         },
         signUp(state, user) {
             state.registered.push(user)
+        },
+        addTask(state, task) {
+            state.tasks.push(task)
+        },
+        delTask(state, idx) {
+            state.tasks.splice(idx, 1);
         }
-
     },
 }

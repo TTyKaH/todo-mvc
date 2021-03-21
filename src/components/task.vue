@@ -12,23 +12,13 @@
         </div>
       </div>
       <div class="control">
-        <input
-          class="status"
-          type="checkbox"
-          v-if="currentUserIsAdmin"
-          v-model="task.isDone"
-        />
-        <button
-          class="task-btn"
-          v-if="currentUserIsAdmin"
-          @click="switchEdit()"
-        >
+        <input class="status" type="checkbox" v-if="currentUserIsAdmin" v-model="task.isDone" />
+        <button class="task-btn" v-if="currentUserIsAdmin" @click="switchEdit()">
           edit
         </button>
         <button @click="taskDel()" class="task-btn">del</button>
       </div>
     </div>
-
     <div class="task-content">
       <div class="task-title">
         {{ task.name }}
@@ -49,7 +39,7 @@
 
 <script>
 export default {
-  props: ['task'],
+  props: ["task"],
   data() {
     return {
       isEditing: false,

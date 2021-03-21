@@ -26,6 +26,23 @@ button {
     padding: 5px 10px;
 }
 
+// bread-crambs
+.bread-cramb {
+    display: flex;
+    color: #8b8b8b;
+}
+
+.bread-cramb a {
+    color: #9b9b9b;
+    transition: .1s linear;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bread-cramb a:hover {
+    color: #fff;
+}
+
 // authorization
 .authorization {
     display: flex;
@@ -188,7 +205,7 @@ button {
     padding: 15px;
 }
 
-.btn {
+.add-task .btn {
     display: flex;
     align-self: center;
     margin: auto;

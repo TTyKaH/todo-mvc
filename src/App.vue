@@ -1,7 +1,9 @@
 <template>
   <div class="app" id="app">
     <app-header></app-header>
-    <router-view></router-view>
+    <transition name="smooth-up">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -12,11 +14,6 @@ export default {
   components: {
     appHeader,
   },
-  // data() {
-  //   return {
-  //     showCreationForm: false,
-  //   };
-  // },
 };
 </script>
 

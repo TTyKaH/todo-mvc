@@ -6,6 +6,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
 button {
     cursor: pointer;
 }
@@ -29,25 +34,25 @@ button {
 }
 
 // bread-crambs
-.bread-crumb {
+.breadcrumbs {
     display: flex;
     color: #8b8b8b;
     margin: 10px 0 15px;
 }
 
-.bread-crumb div {
-    font-size: 18px;
-}
+.breadcrumbs {
+    a {
+        font-size: 18px;
+        color: #9b9b9b;
+        transition: .1s linear;
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-.linked {
-    color: #9b9b9b;
-    transition: .1s linear;
-    display: flex;
-    cursor: pointer;
-}
-
-.linked:hover {
-    color: #fff;
+    a:hover {
+        color: #fff;
+    }
 }
 
 .space-crutch {
@@ -248,6 +253,84 @@ button {
     padding: 3px;
     margin: 2px;
 }
+
+// Animation
+
+.smooth-up-enter-active {
+    animation: coming .2s;
+    animation-delay: .2s;
+    opacity: 0;
+}
+
+.smooth-up-leave-active {
+    animation: going .2s;
+}
+
+@keyframes coming {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes going {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.smooth-side-enter-active,
+.smooth-side-leave-active {
+    transition: opacity .5s
+}
+
+.smooth-side-enter,
+.smooth-side-leave-to {
+    opacity: 0
+}
+
+// .smooth-side-enter-active {
+//     animation: coming-side .2s;
+//     animation-delay: .2s;
+//     opacity: 0;
+// }
+
+// .smooth-side-leave-active {
+//     animation: going-side .2s;
+// }
+
+// @keyframes coming-side {
+//     from {
+//         transform: translateX(0);
+//         opacity: 0;
+//     }
+
+//     to {
+//         transform: translateX(0);
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes going-side {
+//     from {
+//         transform: translateX(0);
+//     }
+
+//     to {
+//         transform: translateX(0);
+//         opacity: 0;
+//     }
+// }
 
 // HELPERS
 

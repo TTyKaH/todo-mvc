@@ -1,9 +1,8 @@
-export default [
-    {
+export default [{
         userName: "Carl",
         email: "xxx@gmail.com",
         name: "SomeText",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voLorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ealuptatem velit dicta odio esse sunt ea.",
         isDone: false,
     },
     {
@@ -17,7 +16,7 @@ export default [
         userName: "Bob",
         email: "mailBob@gmail.com",
         name: "SomeText",
-        desc: "Lorem ipsum dolor sit aLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.met consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
+        desc: "Lorem ipsum dolor sit aLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.met consectetur adipisicing elit. Veniam mollitia asperiores Lorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt eacorrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
         isDone: false,
     },
     {
@@ -52,16 +51,16 @@ export default [
         userName: "Andrew",
         email: "CHekBoy@gmail.com",
         name: "SomeText",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
+        desc: "Lorem ipsum dolor sit amet consectetLorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt eaur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
         isDone: false,
-    },   
+    },
     {
         userName: "Vitaliy9",
         email: "12345@gmail.com",
         name: "SomeText",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
         isDone: false,
-    }, 
+    },
     {
         userName: "Vitaliy10",
         email: "12345@gmail.com",
@@ -73,7 +72,7 @@ export default [
         userName: "Vitaliy11",
         email: "12345@gmail.com",
         name: "SomeText",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
+        desc: "Lorem ipsum doLorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.g elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ealor sit amet consectetur adipisicing elit. Veniam mollitia asperiores corrupti ipsa vel aperiam saepe laborum debitis quam eligendi doloribus blanditiis, impedit voluptatem velit dicta odio esse sunt ea.",
         isDone: false,
     },
     {

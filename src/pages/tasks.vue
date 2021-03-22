@@ -4,7 +4,9 @@
       <router-link to="/add-new-task" class="button btn">Add new task</router-link>
     </div>
     <sorter v-model="tasks" />
-    <task v-for="(t, idx) in paginatedTasks" :key="idx" :task="t" @task-del="deleteTask(idx)" />
+    <transition-group name="smooth-side">
+      <task v-for="(t, idx) in paginatedTasks" :key="idx" :task="t" @task-del="deleteTask(idx)" />
+    </transition-group>
     <pagination :tasks="tasks" v-model="paginatedTasks" />
   </div>
 </template>

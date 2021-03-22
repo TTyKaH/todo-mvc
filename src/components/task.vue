@@ -26,8 +26,8 @@
       <div v-if="isEditing">
         <textarea class="editArea" v-model="task.desc"></textarea>
         <div class="flex">
-          <button class="btn" @click="switchEdit()">accept</button>
-          <button class="btn" @click="abortEdit()">abort</button>
+          <button class="button" @click="switchEdit()">accept</button>
+          <button class="button" @click="abortEdit()">abort</button>
         </div>
       </div>
       <div class="task-description" v-else>

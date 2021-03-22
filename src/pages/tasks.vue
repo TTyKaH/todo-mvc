@@ -1,6 +1,8 @@
 <template>
   <div>
-    <router-link to="/add-new-task" class="btn">Add new task</router-link>
+    <div class="flex jus-con-center" style="width: 100%">
+      <router-link to="/add-new-task" class="button btn">Add new task</router-link>
+    </div>
     <sorter v-model="tasks" />
     <task v-for="(t, idx) in paginatedTasks" :key="idx" :task="t" @task-del="deleteTask(idx)" />
     <pagination :tasks="tasks" v-model="paginatedTasks" />

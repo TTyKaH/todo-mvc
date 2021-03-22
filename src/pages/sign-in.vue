@@ -4,8 +4,8 @@
       <input v-model="user.login" type="text" placeholder="Login" />
       <input v-model="user.password" type="password" placeholder="Password" />
       <div>
-        <button @click="signIn()">Sign-in</button>
-        <router-link to="/">Cancel</router-link>
+        <button class="button" @click="signIn()">Sign-in</button>
+        <router-link class="button" to="/">Cancel</router-link>
       </div>
     </div>
   </div>

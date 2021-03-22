@@ -12,11 +12,11 @@ export default {
   components: {
     appHeader,
   },
-  data() {
-    return {
-      showCreationForm: false,
-    };
-  },
+  // data() {
+  //   return {
+  //     showCreationForm: false,
+  //   };
+  // },
 };
 </script>
 

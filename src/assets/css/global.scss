@@ -15,14 +15,16 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     background: #212a52;
-    padding: 15px 300px;
+    padding: 0 300px;
 }
 
 .user {
+    max-width: min-content;
     background-color: #303c70;
     border-radius: 3px;
     color: #fff;
     font-size: 18px;
+    margin-top: 15px;
     padding: 5px 10px;
 }
 
@@ -30,10 +32,11 @@ button {
 .bread-crumb {
     display: flex;
     color: #8b8b8b;
+    margin: 10px 0 15px;
 }
 
 .bread-crumb div {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .linked {
@@ -48,13 +51,14 @@ button {
 }
 
 .space-crutch {
-    color:transparent;
+    color: transparent;
 }
 
 // authorization
 .authorization {
     display: flex;
     flex-direction: column;
+    height: inherit;
     align-self: center;
     color: #dfdfdf;
 }
@@ -63,8 +67,7 @@ button {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 130px;
-    margin: auto;
+    max-width: 250px;
 }
 
 .lgn-rg button {
@@ -74,9 +77,8 @@ button {
 .sign {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 50px auto 0;
     width: 230px;
-    margin-top: 10px;
 }
 
 .sign input {
@@ -89,10 +91,47 @@ button {
     justify-content: center;
 }
 
-.sign button {
+// add task
+.add-task {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #dfdfdf;
+    padding: 15px;
+}
+
+.btn {
     align-self: center;
-    padding: 2px;
-    margin: 5px;
+    margin: auto;
+}
+
+.input-fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5px;
+    margin-bottom: 5px;
+}
+
+.task-input {
+    width: 280px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.task-desc {
+    padding-top: 4px;
+    height: 50px;
+}
+
+.btn-add {
+    width: 50px;
 }
 
 // sorter
@@ -107,6 +146,7 @@ button {
 .sorter button {
     padding: 2px;
     margin: 5px;
+    width: 60px;
 }
 
 // taskslist
@@ -135,13 +175,13 @@ button {
 .for-whom {
     display: flex;
     min-width: 200px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .name {
     font-size: 20px;
     word-wrap: break-word;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .email {
@@ -172,7 +212,7 @@ button {
 
 .task-btn {
     max-height: 24px;
-    font-size: 15px;
+    font-size: 16px;
     padding: 2px;
 }
 
@@ -192,6 +232,10 @@ button {
     word-wrap: break-word;
 }
 
+.editArea {
+    padding: 5px;
+}
+
 // pagination
 .pagination {
     display: flex;
@@ -205,54 +249,22 @@ button {
     margin: 2px;
 }
 
-// add task
-.add-task {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #dfdfdf;
-    padding: 15px;
-}
-
-.add-task .btn {
-    display: flex;
-    align-self: center;
-    margin: auto;
-    padding: 5px;
-}
-
-.input-fields {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-}
-
-.input-field {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    row-gap: 5px;
-}
-
-.task-input {
-    width: 280px;
-    height: 25px;
-    padding-left: 5px;
-}
-
-.task-desc {
-    padding-top: 4px;
-    height: 50px;
-}
-
-.btn-add {
-    width: 50px;
-    height: 30px;
-    margin: 10px 5px;
-}
-
 // HELPERS
 
 .flex {
     display: flex;
+}
+
+.jus-con-center {
+    justify-content: center;
+}
+
+.button {
+    padding: 4px;
+    margin: 5px;
+    background-color: #efefef;
+    text-decoration: none;
+    border: 1px solid #212a52;
+    border-radius: 2px;
+    color: #000;
 }

@@ -1,38 +1,41 @@
 <template>
-  <div class="bread-crumb">
-    <div v-for="(breadcrumb, idx) in breadCrumbList" :key="idx" @click="routeTo(idx)" :class="{'linked': !!breadcrumb.link}">
-      {{breadcrumb.name}}
-      <div v-if="breadcrumb.link" class="space-crutch">.</div>
-      <div v-if="breadcrumb.link">/</div>
-      <div v-if="breadcrumb.link" class="space-crutch">.</div>
-    </div>
+  <div class="breadcrumbs">
+    <router-link v-for="b in breadcrumbs" :key="b.name" :to="b.path">
+      {{b.name}}
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      breadCrumbList: [],
-    };
-  },
-  // how i can understand, it need for case, when i update page
-  mounted() {
-    this.updateList();
-  },
-  watch: {
-    $route() {
-      this.updateList();
-    },
-  },
-  methods: {
-    routeTo(pRouteTo) {
-      if (this.breadCrumbList[pRouteTo].link)
-        this.$router.push(this.breadCrumbList[pRouteTo].link);
-    },
-    updateList() {
-      this.breadCrumbList = this.$route.meta.breadcrumb;
+  computed: {
+    breadcrumbs() {
+      let res = [];
+      if (this.$route.path !== "/") {
+        res.push({
+          name: "Home",
+          path: "/",
+        });
+      }
+      res.push({
+        name: this.$route.name,
+        path: this.$route.path,
+      });
+      return res;
     },
   },
 };
 </script>
+
+<style lang='scss'>
+.breadcrumbs {
+  a {
+    &:after {
+      content: "/";
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+}
+</style>

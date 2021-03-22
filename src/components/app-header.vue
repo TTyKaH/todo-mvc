@@ -6,7 +6,6 @@
           {{ currentUser ? currentUser.name : "anonimous" }}
         </div>
       </div>
-      <!-- uppercase for better readability? -->
       <Breadcrumbs />
     </div>
     <div class="authorization">

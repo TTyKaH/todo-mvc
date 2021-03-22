@@ -9,55 +9,23 @@ export default new VueRouter({
   mode: "history",
   routes: [{
       path: "/",
-      name: 'tasks',
+      name: 'Home',
       component: tasks,
-      meta: {
-        breadcrumb: [{
-          name: 'tasks'
-        }]
-      },
     },
     {
       path: "/add-new-task",
-      name: 'add-task',
+      name: 'Add Task',
       component: addNewTask,
-      meta: {
-        breadcrumb: [{
-          name: 'tasks',
-          // возможно ссылка пуста на корневой каталог
-          link: '/'
-        }, {
-          name: 'add task'
-        }]
-      },
     },
     {
       path: "/sign-in",
+      name: 'Sign In',
       component: signIn,
-      meta: {
-        breadcrumb: [{
-            name: 'tasks',
-            link: '/'
-          },
-          {
-            name: 'sign in'
-          }
-        ],
-      },
     },
     {
       path: "/sign-up",
+      name: 'Sign Up',
       component: signUp,
-      meta: {
-        breadcrumb: [{
-            name: 'tasks',
-            link: '/'
-          },
-          {
-            name: 'sign up'
-          }
-        ],
-      },
     },
   ],
 });

@@ -6,8 +6,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    // overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // margin-left: calc(100vw - 100%);
+    // margin-right: 0;
+}
+
 body {
-    margin-right: calc(-1 * (100vw - 100%));
     background-color: #f4f5f7;
 }
 
@@ -22,6 +29,10 @@ input:focus,
 textarea:active,
 textarea:focus {
     outline: none;
+}
+
+.app {
+    width: 100vw;
 }
 
 .bg-header {
@@ -252,6 +263,7 @@ textarea:focus {
     min-height: 20px;
     border: #dfdfdf 2px solid;
     margin: 5px;
+    cursor: pointer;
 }
 
 .task-btn {
@@ -274,6 +286,7 @@ textarea:focus {
     color: #7e7e7e;
     word-wrap: break-word;
     line-height: 22px;
+    text-indent: 20px;
 }
 
 .editArea {
@@ -291,6 +304,7 @@ textarea:focus {
 .pagination button {
     padding: 3px;
     margin: 2px;
+    box-shadow: 0 0 10px #dddddd;
 }
 
 // Animation
@@ -336,39 +350,6 @@ textarea:focus {
 .smooth-side-leave-to {
     opacity: 0
 }
-
-// .smooth-side-enter-active {
-//     animation: coming-side .2s;
-//     animation-delay: .2s;
-//     opacity: 0;
-// }
-
-// .smooth-side-leave-active {
-//     animation: going-side .2s;
-// }
-
-// @keyframes coming-side {
-//     from {
-//         transform: translateX(0);
-//         opacity: 0;
-//     }
-
-//     to {
-//         transform: translateX(0);
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes going-side {
-//     from {
-//         transform: translateX(0);
-//     }
-
-//     to {
-//         transform: translateX(0);
-//         opacity: 0;
-//     }
-// }
 
 // HELPERS
 

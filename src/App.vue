@@ -7,6 +7,8 @@
   </div>
 </template>
 
+// TODO: проблемы со скролом при работе с роутингом
+
 <script>
 import appHeader from "@/components/app-header";
 

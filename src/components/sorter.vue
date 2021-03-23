@@ -1,10 +1,10 @@
 <template>
   <div class="sorter">
-    <div>sort:</div>
+    <div class="button-txt">sort:</div>
     <div>
-      <button @click="sortBy('userName')">name</button>
-      <button @click="sortBy('email')">email</button>
-      <button @click="sortBy('isDone')">stasus</button>
+      <button @click="sortBy('userName')" class="button button-txt">name</button>
+      <button @click="sortBy('email')" class="button button-txt">email</button>
+      <button @click="sortBy('isDone')" class="button button-txt">stasus</button>
     </div>
   </div>
 </template>

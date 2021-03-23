@@ -30,7 +30,7 @@
           <button class="button" @click="abortEdit()">abort</button>
         </div>
       </div>
-      <div class="task-description" v-else>
+      <div class="task-desc" v-else>
         {{ task.desc }}
       </div>
     </div>
@@ -80,15 +80,5 @@ export default {
 .editArea {
   width: 100%;
   height: 125px;
-}
-
-.flex {
-  margin-top: 5px;
-  width: 150px;
-}
-
-.btn {
-  padding: inherit 5px;
-  margin: 5px;
 }
 </style>

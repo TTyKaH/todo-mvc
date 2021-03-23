@@ -9,41 +9,52 @@
 body {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
+    background-color: #f4f5f7;
 }
 
 button {
     cursor: pointer;
 }
 
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: none;
+}
+
+.bg-header {
+    background: #fff;
+}
+
 .user-window {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: #212a52;
-    padding: 0 300px;
 }
 
 .user {
     max-width: min-content;
-    background-color: #303c70;
+    // background-color: #f4f5f7;
     border-radius: 3px;
-    color: #fff;
+    color: #a5a5a5;
     font-size: 18px;
-    margin-top: 15px;
+    margin: 15px 0;
     padding: 5px 10px;
 }
 
 // bread-crambs
 .breadcrumbs {
     display: flex;
-    color: #8b8b8b;
-    margin: 10px 0 15px;
+    margin: auto 0 auto 20px;
 }
 
 .breadcrumbs {
     a {
         font-size: 18px;
-        color: #9b9b9b;
+        color: #cacaca;
         transition: .1s linear;
         display: flex;
         cursor: pointer;
@@ -51,7 +62,7 @@ button {
     }
 
     a:hover {
-        color: #fff;
+        color: #a5a5a5;
     }
 }
 
@@ -75,8 +86,11 @@ button {
     max-width: 250px;
 }
 
-.lgn-rg button {
-    padding: 2px;
+.authorization button,
+.lgn-rg a {
+    // font-weight: 600;
+    // letter-spacing: .2px;
+    color: #a5a5a5;
 }
 
 .sign {
@@ -97,6 +111,10 @@ button {
 }
 
 // add task
+.tasks {
+    border-radius: 5px;
+}
+
 .add-task {
     display: flex;
     justify-content: center;
@@ -131,7 +149,11 @@ button {
 }
 
 .task-desc {
-    padding-top: 4px;
+    color: #686868;
+}
+
+.task-desc-input {
+    padding-top: 5px;
     height: 50px;
 }
 
@@ -139,13 +161,21 @@ button {
     width: 50px;
 }
 
+.menu {
+    background: #fff;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
 // sorter
 .sorter {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid #dfdfdf;
     padding: 10px;
+}
+
+.sorter:last-child div {
+    display: flex;
 }
 
 .sorter button {
@@ -158,15 +188,12 @@ button {
 .task {
     display: flex;
     justify-content: space-between;
-    color: #000;
-    transition: .2s linear;
+    color: #888888;
+    background-color: #fff;
     padding: 10px;
-    margin: 0 300px;
-    border-bottom: 2px solid #dfdfdf;
-}
-
-.task:hover {
-    background: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .2s linear;
 }
 
 .task-header {
@@ -338,6 +365,11 @@ button {
     display: flex;
 }
 
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+}
+
 .jus-con-center {
     justify-content: center;
 }
@@ -345,9 +377,29 @@ button {
 .button {
     padding: 4px;
     margin: 5px;
-    background-color: #efefef;
-    text-decoration: none;
-    border: 1px solid #212a52;
-    border-radius: 2px;
     color: #000;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #dfdfdf;
+    border-radius: 2px;
+    transition: all .2s linear;
+}
+
+.button:hover {
+    background-color: #a5a5a5;
+    border: 2px solid#a5a5a5;
+    color: #fff;
+}
+
+.button-txt {
+    color: #a5a5a5;
+}
+
+.grey-brd {
+    border: 2px#dfdfdf solid;
+    color: #a5a5a5;
+}
+
+.grey-brd::placeholder {
+    color: #a5a5a5;
 }

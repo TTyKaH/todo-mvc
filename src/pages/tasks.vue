@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <div class="flex jus-con-center" style="width: 100%">
-      <router-link to="/add-new-task" class="button btn">Add new task</router-link>
+  <div class="wrap tasks">
+    <div class="flex menu">
+      <div class="flex jus-con-center" style="padding-left: 8px">
+        <router-link to="/add-new-task" class="btn button button-txt">Add new task</router-link>
+      </div>
+      <sorter v-model="tasks" />
     </div>
-    <sorter v-model="tasks" />
     <transition-group name="smooth-side">
       <task v-for="(t, idx) in paginatedTasks" :key="idx" :task="t" @task-del="deleteTask(idx)" />
     </transition-group>

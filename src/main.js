@@ -11,9 +11,6 @@ Vue.use(VueRouter)
 Vue.use(Vuex)
 
 new Vue({
-  // обеспечивает доступ всем компонентам к store
-  // store: store,
-  // Вариант записи от Давида
   store: new Vuex.Store(store),
   router,
   render: h => h(App),

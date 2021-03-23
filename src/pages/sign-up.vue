@@ -1,12 +1,12 @@
 <template>
   <div class="authorization">
     <div class="sign">
-      <input v-model="user.name" type="text" placeholder="Name" />
-      <input v-model="user.login" type="text" placeholder="Login" />
-      <input v-model="user.password" type="text" placeholder="Password" />
+      <input v-model="user.name" type="text" placeholder="Name" class="grey-brd" />
+      <input v-model="user.login" type="text" placeholder="Login" class="grey-brd" />
+      <input v-model="user.password" type="text" placeholder="Password" class="grey-brd" />
       <div>
         <button class="button" @click="signUp()">Sign-up</button>
-        <router-link class="button" to="/">Cancel</router-link>
+        <router-link class="button button-txt" to="/">Cancel</router-link>
       </div>
     </div>
   </div>

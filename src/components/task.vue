@@ -12,11 +12,12 @@
         </div>
       </div>
       <div class="control">
-        <input class="status" type="checkbox" v-if="currentUserIsAdmin" v-model="task.isDone" />
-        <button class="task-btn" v-if="currentUserIsAdmin" @click="switchEdit()">
+        <button class="button button-txt" style="margin-left: 0" v-if="currentUserIsAdmin" @click="switchEdit()">
           edit
         </button>
-        <button @click="taskDel()" class="task-btn">del</button>
+        <button @click="taskDel()" class="button button-txt">del</button>
+        <div class="txt">status:</div>
+        <input class="status" type="checkbox" v-if="currentUserIsAdmin" v-model="task.isDone" />
       </div>
     </div>
     <div class="task-content">
@@ -24,10 +25,10 @@
         {{ task.name }}
       </div>
       <div v-if="isEditing">
-        <textarea class="editArea" v-model="task.desc"></textarea>
+        <textarea class="editArea grey-brd task-desc-input" ref="textarea" v-model="task.desc" @input="textAreaAdjust()"></textarea>
         <div class="flex">
-          <button class="button" @click="switchEdit()">accept</button>
-          <button class="button" @click="abortEdit()">abort</button>
+          <button class="button button-txt" @click="switchEdit()">accept</button>
+          <button class="button button-txt" @click="abortEdit()">abort</button>
         </div>
       </div>
       <div class="task-desc" v-else>
@@ -66,6 +67,11 @@ export default {
     abortEdit() {
       this.isEditing = false;
       this.task.desc = this.descBuffer;
+    },
+    textAreaAdjust() {
+      this.$refs.textarea.style.height = "1px";
+      this.$refs.textarea.style.height =
+        25 + this.$refs.textarea.scrollHeight + "px";
     },
   },
 };

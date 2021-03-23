@@ -1,10 +1,10 @@
 <template>
   <div class="pagination">
-    <button v-if="currentPage > 1" @click="prev()">prev</button>
-    <button v-for="(p, idx) in pages" :key="idx" @click="setPage(p)">
+    <button v-if="currentPage > 1" @click="prev()" class="button button-txt">prev</button>
+    <button v-for="(p, idx) in pages" :key="idx" @click="setPage(p)" class="button button-txt">
       {{ p }}
     </button>
-    <button v-if="currentPage < pages.length" @click="next()">next</button>
+    <button v-if="currentPage < pages.length" @click="next()" class="button button-txt">next</button>
   </div>
 </template>
 

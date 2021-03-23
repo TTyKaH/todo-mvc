@@ -7,7 +7,6 @@
 }
 
 body {
-    overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
     background-color: #f4f5f7;
 }
@@ -39,7 +38,7 @@ textarea:focus {
     max-width: min-content;
     // background-color: #f4f5f7;
     border-radius: 3px;
-    color: #a5a5a5;
+    color: #7e7e7e;
     font-size: 18px;
     margin: 15px 0;
     padding: 5px 10px;
@@ -62,7 +61,7 @@ textarea:focus {
     }
 
     a:hover {
-        color: #a5a5a5;
+        color: #7e7e7e;
     }
 }
 
@@ -90,7 +89,7 @@ textarea:focus {
 .lgn-rg a {
     // font-weight: 600;
     // letter-spacing: .2px;
-    color: #a5a5a5;
+    color: #7e7e7e;
 }
 
 .sign {
@@ -163,8 +162,10 @@ textarea:focus {
 
 .menu {
     background: #fff;
-    margin: 10px auto;
+    margin: 15px auto;
+    border-radius: 5px;
     justify-content: space-between;
+    box-shadow: 0 0 10px #dddddd;
 }
 
 // sorter
@@ -190,41 +191,46 @@ textarea:focus {
     justify-content: space-between;
     color: #888888;
     background-color: #fff;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: .2s linear;
+    box-shadow: 0 0 10px #dddddd;
 }
 
 .task-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-right: 50px;
 }
 
 .for-whom {
     display: flex;
+    flex-direction: column;
     min-width: 200px;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
 .name {
-    font-size: 20px;
+    font-size: 18px;
     word-wrap: break-word;
     margin-right: 15px;
+    margin-bottom: 10px;
+    color: #7e7e7e;
 }
 
 .email {
     display: flex;
     align-items: center;
-    color: #444444;
+    color: #7e7e7e;
     word-wrap: break-word;
 }
 
 .email p {
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 2px;
 }
 
@@ -232,36 +238,42 @@ textarea:focus {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 100px;
     height: 35px;
-    align-self: start;
+    align-self: flex-start;
+    align-items: center;
+
+    .txt {
+        margin-left: 10px;
+    }
 }
 
 .status {
-    width: 24px;
-    height: 24px;
+    min-width: 20px;
+    min-height: 20px;
+    border: #dfdfdf 2px solid;
+    margin: 5px;
 }
 
 .task-btn {
     max-height: 24px;
-    font-size: 16px;
     padding: 2px;
 }
 
 .task-content {
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .task-title {
+    color: #7e7e7e;
     margin-bottom: 5px;
     word-wrap: break-word;
 }
 
-.task-description {
+.task-desc {
     text-align: justify;
-    font-size: 16px;
-    color: #444444;
+    color: #7e7e7e;
     word-wrap: break-word;
+    line-height: 22px;
 }
 
 .editArea {
@@ -273,16 +285,15 @@ textarea:focus {
     display: flex;
     justify-content: center;
     margin: 10px;
+    font-weight: 600;
 }
 
 .pagination button {
-    font-size: 14px;
     padding: 3px;
     margin: 2px;
 }
 
 // Animation
-
 .smooth-up-enter-active {
     animation: coming .2s;
     animation-delay: .2s;
@@ -374,6 +385,10 @@ textarea:focus {
     justify-content: center;
 }
 
+.txt {
+    color: #7e7e7e;
+}
+
 .button {
     padding: 4px;
     margin: 5px;
@@ -386,20 +401,20 @@ textarea:focus {
 }
 
 .button:hover {
-    background-color: #a5a5a5;
-    border: 2px solid#a5a5a5;
+    background-color: #7e7e7e;
+    border: 2px solid#7e7e7e;
     color: #fff;
 }
 
 .button-txt {
-    color: #a5a5a5;
+    color: #7e7e7e;
 }
 
 .grey-brd {
     border: 2px#dfdfdf solid;
-    color: #a5a5a5;
+    color: #7e7e7e;
 }
 
 .grey-brd::placeholder {
-    color: #a5a5a5;
+    color: #7e7e7e;
 }

@@ -5,8 +5,8 @@
       <input v-model="user.login" type="text" placeholder="Login" class="grey-brd" />
       <input v-model="user.password" type="text" placeholder="Password" class="grey-brd" />
       <div>
-        <button class="button" @click="signUp()">Sign-up</button>
-        <router-link class="button button-txt" to="/">Cancel</router-link>
+        <button class="button button-white" @click="signUp()">Sign-up</button>
+        <router-link class="button button-white button-txt" to="/">Cancel</router-link>
       </div>
     </div>
   </div>

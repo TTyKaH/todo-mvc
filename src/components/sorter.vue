@@ -2,9 +2,9 @@
   <div class="sorter">
     <div class="button-txt">sort:</div>
     <div>
-      <button @click="sortBy('userName')" class="button button-txt">name</button>
-      <button @click="sortBy('email')" class="button button-txt">email</button>
-      <button @click="sortBy('isDone')" class="button button-txt">stasus</button>
+      <button @click="sortBy('userName')" class="button button-txt">Name</button>
+      <button @click="sortBy('email')" class="button button-txt">Email</button>
+      <button @click="sortBy('isDone')" class="button button-txt">Stasus</button>
     </div>
   </div>
 </template>

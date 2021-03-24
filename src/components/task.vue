@@ -13,9 +13,9 @@
       </div>
       <div class="control">
         <button class="button button-txt" style="margin-left: 0" v-if="currentUserIsAdmin" @click="switchEdit()">
-          edit
+          Edit
         </button>
-        <button @click="taskDel()" class="button button-txt">del</button>
+        <button @click="taskDel()" class="button button-txt">Del</button>
         <div class="txt">status:</div>
         <input class="status" type="checkbox" v-if="currentUserIsAdmin" v-model="task.isDone" />
       </div>

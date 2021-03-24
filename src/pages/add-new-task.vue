@@ -7,8 +7,8 @@
       <textarea class="task-input grey-brd task-desc-input" v-model="task.desc" ref="textarea" @input="textAreaAdjust()" type="text" placeholder="Task description" />
     </div>
     <div>
-      <button class="button btn-add button-txt" @click="add()">Add</button>
-      <router-link to="/" class="button btn-add button-txt">Close</router-link>
+      <button class="button btn-add button-txt button-white" @click="add()">Add</button>
+      <router-link to="/" class="button btn-add button-txt button-white">Close</router-link>
     </div>
   </div>
 </template>

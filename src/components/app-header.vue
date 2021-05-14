@@ -4,7 +4,7 @@
       <div class="flex">
         <div>
           <div class="user">
-            {{ currentUser ? currentUser.name : "Anonimous" }}
+            {{ currentUser ? currentUser.name : "Anonymous" }}
           </div>
         </div>
         <Breadcrumbs />

@@ -4,7 +4,7 @@
     <div>
       <button @click="sortBy('userName')" class="button button-txt">Name</button>
       <button @click="sortBy('email')" class="button button-txt">Email</button>
-      <button @click="sortBy('isDone')" class="button button-txt">Stasus</button>
+      <button @click="sortBy('isDone')" class="button button-txt">Status</button>
     </div>
   </div>
 </template>
